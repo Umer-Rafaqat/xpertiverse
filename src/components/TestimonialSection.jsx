@@ -93,11 +93,11 @@ export default function TestimonialsSection() {
     <section className="w-full bg-gradient-to-b from-black via-[#0a0a0a] to-black text-white py-20 lg:py-32 px-4 sm:px-6 lg:px-20 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
-        <div 
+        <div
           className="absolute inset-0"
           style={{
             backgroundImage: `radial-gradient(circle, #DC2828 1px, transparent 1px)`,
-            backgroundSize: '50px 50px'
+            backgroundSize: "49px 49px",
           }}
         />
       </div>
@@ -112,12 +112,11 @@ export default function TestimonialsSection() {
         transition={{
           duration: 10,
           repeat: Infinity,
-          ease: "easeInOut"
+          ease: "easeInOut",
         }}
       />
 
       <div className="max-w-7xl mx-auto relative z-10">
-
         {/* Centered Header */}
         <motion.div
           className="text-center mb-16 lg:mb-20"
@@ -127,7 +126,7 @@ export default function TestimonialsSection() {
           transition={{ duration: 0.8 }}
         >
           {/* Badge */}
-          <motion.div 
+          <motion.div
             whileHover={{ scale: 1.05 }}
             className="inline-flex items-center gap-2 mb-6 px-5 py-2 border border-[#DC2828]/30 rounded-full text-[#DC2828] text-sm font-semibold bg-[#DC2828]/10 backdrop-blur-sm"
           >
@@ -145,7 +144,8 @@ export default function TestimonialsSection() {
           </h2>
 
           <p className="text-gray-400 text-lg leading-relaxed max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what our clients have to say about their experience.
+            Don't just take our word for it. Here's what our clients have to say
+            about their experience.
           </p>
         </motion.div>
 
@@ -192,9 +192,13 @@ export default function TestimonialsSection() {
                   {/* Star Ratings - Top */}
                   <div className="flex space-x-1 mb-6">
                     {Array.from({ length: 5 }).map((_, idx) => (
-                      <HiStar 
-                        key={idx} 
-                        className={`text-2xl ${idx < (t.rating || 5) ? "text-[#DC2828]" : "text-gray-600"}`}
+                      <HiStar
+                        key={idx}
+                        className={`text-2xl ${
+                          idx < (t.rating || 5)
+                            ? "text-[#DC2828]"
+                            : "text-gray-600"
+                        }`}
                       />
                     ))}
                   </div>
@@ -222,7 +226,9 @@ export default function TestimonialsSection() {
                     )}
                     <div className="text-left">
                       <h3 className="text-lg font-bold text-white">{t.name}</h3>
-                      <p className="text-[#DC2828] text-sm font-semibold">{t.role}</p>
+                      <p className="text-[#DC2828] text-sm font-semibold">
+                        {t.role}
+                      </p>
                     </div>
                   </div>
 

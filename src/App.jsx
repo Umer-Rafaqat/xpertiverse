@@ -30,9 +30,7 @@ function App() {
 
         <Route path="/all-team-members" element={<AllTeam />} />
 
-
-          <Route path="/contact" element={<ContactUs />} />
-          
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Footer />
     </Router>
@@ -40,4 +38,3 @@ function App() {
 }
 
 export default App;
-

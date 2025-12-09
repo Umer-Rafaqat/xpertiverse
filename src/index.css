@@ -5,13 +5,13 @@
 }
 
 .nav-underline::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -2px; /* distance from text */
   width: 100%;
   height: 2px; /* thickness of underline */
-  background-color: #DC2828; /* underline color */
+  background-color: #dc2828; /* underline color */
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
