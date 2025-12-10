@@ -2,7 +2,7 @@ import React from "react";
 import { HERO_CONTENT } from "../utils/constants/text";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import bgVideo from "../assets/videos/bg3.mp4";
+import bgVideo from "../assets/videos/bg.mp4";
 
 const HeroSection = () => {
   return (
@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
 
         {/* ✔ Subtle diagonal lines */}
-        <motion.div
+        {/* <motion.div
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `repeating-linear-gradient(
@@ -37,7 +37,7 @@ const HeroSection = () => {
           }}
           animate={{ backgroundPosition: ["0 0", "300px 300px"] }}
           transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-        />
+        /> */}
       </div>
 
       {/* CENTER CONTENT */}
