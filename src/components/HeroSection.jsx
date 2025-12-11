@@ -2,7 +2,7 @@ import React from "react";
 import { HERO_CONTENT } from "../utils/constants/text";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import bgVideo from "../assets/videos/bg.mp4";
+import bgVideo from "../assets/videos/bg2.mp4";
 
 const HeroSection = () => {
   return (
@@ -71,7 +71,7 @@ const HeroSection = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
           className="text-4xl sm:text-5xl lg:text-7xl font-extrabold mb-6 
-                     bg-gradient-to-r from-[#FF7043] to-[#E53935] 
+                     bg-gradient-to-r from-[#F56716] via-[#EA4920] to-[#DC2828] 
                      bg-clip-text text-transparent leading-tight"
         >
           {HERO_CONTENT.heading2}
