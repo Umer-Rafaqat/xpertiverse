@@ -20,7 +20,8 @@ const HeroSection = () => {
         />
 
         {/* 🎨 Background Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" /> */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/75 to-black/90" />
 
         {/* ✔ Subtle diagonal lines */}
         {/* <motion.div
