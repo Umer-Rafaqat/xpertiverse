@@ -16,7 +16,7 @@ import Footer from "./components/layout/Footer.jsx";
 
 function App() {
   return (
-    <Router basename="/xpertiverse">
+    <Router>
       <Header />
       <ScrollToTop />
       <Routes>
