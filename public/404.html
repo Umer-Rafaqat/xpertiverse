@@ -4,29 +4,15 @@
     <meta charset="utf-8" />
     <title>Xpertiverse</title>
     <script type="text/javascript">
-      // Store the current URL path
-      var pathSegmentsToKeep = 1;
+      // Get the current path
+      var currentPath = window.location.pathname;
 
-      var l = window.location;
-      l.replace(
-        l.protocol +
-          "//" +
-          l.hostname +
-          (l.port ? ":" + l.port : "") +
-          l.pathname
-            .split("/")
-            .slice(0, 1 + pathSegmentsToKeep)
-            .join("/") +
-          "/?/" +
-          l.pathname
-            .slice(1)
-            .split("/")
-            .slice(pathSegmentsToKeep)
-            .join("/")
-            .replace(/&/g, "~and~") +
-          (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
-          l.hash
-      );
+      // Store the redirect path in sessionStorage
+      sessionStorage.redirect =
+        currentPath + window.location.search + window.location.hash;
+
+      // Redirect to index.html
+      window.location.href = "/xpertiverse/";
     </script>
   </head>
   <body></body>
