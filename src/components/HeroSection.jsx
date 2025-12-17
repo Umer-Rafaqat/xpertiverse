@@ -16,7 +16,10 @@ const HeroSection = () => {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover "
+          aria-hidden="true"
+          poster="/path/to/poster.jpg"
+          preload="metadata"
         />
 
         {/* 🎨 Background Overlay */}
@@ -44,6 +47,7 @@ const HeroSection = () => {
       {/* CENTER CONTENT */}
       <div className="relative z-10 max-w-5xl w-full mx-auto text-center">
         {/* Badge */}
+
         <motion.p
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -67,7 +71,7 @@ const HeroSection = () => {
         </motion.h1>
 
         {/* Heading 2 */}
-        <motion.h1
+        <motion.h2
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
@@ -76,7 +80,7 @@ const HeroSection = () => {
                      bg-clip-text text-transparent leading-tight"
         >
           {HERO_CONTENT.heading2}
-        </motion.h1>
+        </motion.h2>
 
         {/* Description */}
         <motion.p
