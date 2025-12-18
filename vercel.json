@@ -1,18 +1,15 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "env": {
-    "VITE_APP_URL": "@vite_app_url"
-  },
   "rewrites": [
     {
-      "source": "/:path*",
+      "source": "/:path",
       "destination": "/index.html"
     }
   ],
   "headers": [
     {
-      "source": "/assets/:path*",
+      "source": "/assets/:path",
       "headers": [
         {
           "key": "Cache-Control",
